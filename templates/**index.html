@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Australian Sayings to Dutch</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>Australian Sayings to Dutch</h1>
+<div class="card-deck">
+{% for flashcard in flashcards %}
+<div class="card">
+<div class="card-header">
+{{ flashcard.front }}
+</div>
+<div class="card-body">
+<p class="card-text">{{ flashcard.back }}</p>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</body>
+</html>
+
+
